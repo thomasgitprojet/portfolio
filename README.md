@@ -1,1 +1,1 @@
-# portfolio
+docker-compose up -d
