@@ -1,6 +1,8 @@
 @use 'variables';
+@use 'font';
+
 
 body {
-    font-family: variables.$font-stack;
+    font-family: font.$font-base;
     background-color: variables.$primary-color;
   }

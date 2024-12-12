@@ -1,0 +1,22 @@
+@use 'variables';
+@use 'font';
+
+.nav {
+    background-color: variables.$color2;
+    border-top: white 1px solid;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.nav-list { 
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-family: font.$font-stack;
+    text-shadow: 1px 0px variables.$color4;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+}
