@@ -1,0 +1,46 @@
+@use 'variables';
+@use 'font';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$color2;
+    width: 100%;
+    color: white;
+    border: solid 1px white;
+    border-radius: 16px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-bottom: solid 1px white;
+        width: 100%;
+        padding: 1rem;
+
+        &-element {
+            width: 10px;
+            height: 10px;
+            border-radius: 9999px;
+            background-color: variables.$color5;
+
+            &--2 {
+                width: 10px;
+                height: 10px;
+                border-radius: 9999px;
+                background-color: variables.$color4;
+            }
+
+            &--3 {
+                width: 10px;
+                height: 10px;
+                border-radius: 9999px;
+                background-color: variables.$color3;
+            }
+        }
+    }
+
+    &__list {
+        padding: 1rem;
+    }
+}

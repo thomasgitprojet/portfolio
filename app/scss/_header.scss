@@ -18,9 +18,11 @@
 
 .banner {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
     color: white;
+
 }
 
 .img-hello {
@@ -29,5 +31,30 @@
 }
 
 .description {
-    color: white;    
+    color: white; 
+}
+
+.img-test {
+    display: none;
+}
+
+@media screen and (min-width: 960px) {
+    .header {
+        background: linear-gradient(to right, variables.$color2 35%, variables.$color4 35%);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 3rem;   
+    }
+
+    .img-test {
+        display: block;
+        width: 26rem;
+    }
+
+    .banner {
+        align-content: flex-start;
+    }
 }
