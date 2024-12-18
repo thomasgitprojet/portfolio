@@ -41,6 +41,40 @@
     }
 
     &__list {
+        display: flex;
+        flex-direction: column;
         padding: 1rem;
+        gap: 0.5rem;
+        
+        &-itm {
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+            justify-content: flex-start;
+        }
     }
+}
+
+.itm-img {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+
+}
+
+.list-process {
+    list-style: initial;
+    padding-left: 40px;
+}
+
+.itm-secondary {
+    list-style-type: circle;
+}
+
+@media screen and (min-width: 960px) {
+    .card {
+        
+    width: fit-content;
+    height: fit-content;
+    }  
 }

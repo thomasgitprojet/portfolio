@@ -8,3 +8,11 @@
     background-color: variables.$color6;
     padding: 1rem;
 }
+
+@media screen and (min-width: 960px) {
+    .about {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+}
