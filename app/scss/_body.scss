@@ -4,5 +4,10 @@
 
 body {
     font-family: font.$font-base;
+    overflow-x: hidden;
     // background-color: variables.$primary-color;
   }
+
+html {
+    overflow-x: hidden;
+}
