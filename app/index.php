@@ -9,13 +9,16 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div>
+        <img class="mouv-zombie1" src="img/zombie.png" alt="petit zombie">
+    </div>
     <header class="header">
-        <h1 class="title">Evil Dev</h1>
+        <h1 class="title"><a href="">Evil Dev</a></h1>
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="">À propos</a></li>
-                <li><a href="">Réalisation</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#realisation">Réalisation</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <img class="img-test" src="img/zombie.png" alt="">
@@ -25,8 +28,11 @@
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur massa in libero molestie pretium. Mauris viverra dictum ante, id suscipit ante fringilla vitae. Sed.</p>
         </div>
     </header>
+    
     <main class="main-container">
-        <section class="about">
+        <section id="apropos" class="about">
+            <h2 class="about__title">À propos</h2>
+            <div class="about__container">
             <card class="card" data-aos="fade-right">
                 <div class="card__title">
                     <div class="card__title-element"></div>
@@ -124,9 +130,12 @@
                     </li>
                 </ul>
             </card>
+            </div>
         </section>
-        <section class="realizations">
-            <card class="card card--realization">
+        <section id="realisation" class="realizations">
+            <h2 class="realizations__title">Realisations</h2>
+            <div class="realizations__container">
+            <card data-aos="fade-left" class="card card--realization">
                 <div class="card__title">
                         <div class="card__title-element"></div>
                         <div class="card__title-element--2"></div>
@@ -138,23 +147,45 @@
                     <div class="card__content-img">
                         <img class="card__img--b2b" src="img/b2bhome.png" alt="">
                     </div>
-                    <h3>Technologies utilisées :</h3>
-                    <ul class="card__list list-style">
-                        <li class="itm-secondary">Html</li>
-                        <li class="itm-secondary">Css</li>
-                        <li class="itm-secondary">Php</li>
-                        <li class="itm-secondary">Js</li>
-                        <li class="itm-secondary">MySQL</li>
-                        <li class="itm-secondary">Docker</li>
-                        <li class="itm-secondary">GitHub</li>
-                    </ul>
+                    <div class="card__content-infos">
+                        <h3>Technologies utilisées :</h3>
+                        <ul class="card__list list-style">
+                            <li class="itm-secondary">Html</li>
+                            <li class="itm-secondary">Css</li>
+                            <li class="itm-secondary">Php</li>
+                            <li class="itm-secondary">Js</li>
+                            <li class="itm-secondary">MySQL</li>
+                            <li class="itm-secondary">Docker</li>
+                            <li class="itm-secondary">GitHub</li>
+                        </ul>
+                    </div>
                 </div>
             </card>
+            </div>
         </section>
     </main>
+    <footer id="contact" class="footer">
+        <h2 class="footer__title">Contact</h2>
+        <div class="footer__container">
+            <a class="footer__link" href="https://github.com/thomasgitprojet">
+                <img class="footer__img img--github" src="img/github.png" alt="logo github">
+            </a>
+    
+            <a class="footer__link" href="https://www.linkedin.com/in/thomas-desse-dev/">
+                <img class="footer__img img--lk" src="img/lk.png" alt="logo linkedin">
+            </a>
+    
+            <div class="contact__mail">
+                <img class="footer__img img--mail" src="img/mail.png" alt="logo-mail">
+                <p>thomasdesse.pro@gmail.com</p>
+            </div>
+        </div>
+        
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();
-  </script>
+    </script>
+    <script>src="js/script.js"</script>
 </body>
 </html>

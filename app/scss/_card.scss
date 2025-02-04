@@ -40,6 +40,11 @@
         }
     }
 
+    &__img--b2b {
+        object-fit: contain;
+        max-width: 100%;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -82,8 +87,26 @@
     .card {      
         width: fit-content;
         height: fit-content;
+
+        &--realization {
+            width: 25%;
+        }
+
+        &__content-infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        }
+
+        &__content-img {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        &__img--b2b {
+            max-width: 50%;
+        }
     }
-    .card--realization {
-        width: 50%;
-    } 
+
 }
