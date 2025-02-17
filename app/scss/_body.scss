@@ -4,25 +4,26 @@
 
 body {
     font-family: font.$font-base;
-    overflow-x: hidden;
+    overflow: hidden;
     // background-color: variables.$primary-color;
   }
 
 html {
     overflow-x: hidden;
+
 }
 
 @media screen and (min-width: 960px) {
 
-    .mouv-zombie1 {
+    .mouv-zombie {
         z-index: 99999999;
         position: absolute;
         object-fit: contain;
         max-width: 3rem;
         top: 50%; /* Position initiale au centre */
         left: 50%;
-        transform: translate(-50%, -50%); /* Centre l'image */
-        transition: left 3s linear, top 3s linear; /* Déplacement fluide */
+        // transform: translate(-50%, -50%); /* Centre l'image */
+        // transition: left 3s linear, top 3s linear; /* Déplacement fluide */
     }
   
 }

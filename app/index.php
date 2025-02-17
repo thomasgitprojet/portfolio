@@ -10,7 +10,9 @@
 </head>
 <body>
     <div>
-        <img class="mouv-zombie1" src="img/zombie.png" alt="petit zombie">
+        <img class="mouv-zombie" src="img/zombie.png" alt="petit zombie">
+        <img class="mouv-zombie" src="img/zombie.png" alt="petit zombie">
+        <img class="mouv-zombie" src="img/zombie.png" alt="petit zombie">
     </div>
     <header class="header">
         <h1 class="title"><a href="">Evil Dev</a></h1>
