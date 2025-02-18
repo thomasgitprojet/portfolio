@@ -9,11 +9,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div>
-        <img class="mouv-zombie" src="img/zombie.png" alt="petit zombie">
-        <img class="mouv-zombie" src="img/zombie.png" alt="petit zombie">
-        <img class="mouv-zombie" src="img/zombie.png" alt="petit zombie">
-    </div>
+    
     <header class="header">
         <h1 class="title"><a href="">Evil Dev</a></h1>
         <nav class="nav">
@@ -188,6 +184,17 @@
     <script>
     AOS.init();
     </script>
-    <script>src="js/script.js"</script>
+    <script src="js/script.js"></script>
+
+        <div class="mouv-zombie" data-zomb="zomb1">
+            <img class="content-img-zombie" src="img/zombie.png" alt="petit zombie">
+        </div>
+        <div class="mouv-zombie" data-zomb="zomb2">
+            <img class="content-img-zombie" src="img/zombie.png" alt="petit zombie">
+        </div>
+        <div class="mouv-zombie" data-zomb="zomb3">
+            <img class="content-img-zombie" src="img/zombie.png" alt="petit zombie">
+        </div>
+    
 </body>
 </html>

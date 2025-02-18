@@ -6,8 +6,8 @@ function initZombies() {
     const imgs = document.querySelectorAll(".mouv-zombie"); // Sélectionne toutes les images
 
     imgs.forEach(img => {
-        let dx = (Math.random() * 2) + 1; // Vitesse aléatoire entre 2 et 3 pixels
-        let dy = (Math.random() * 2) + 1;
+        let dx = (Math.random()) + 1; // Vitesse aléatoire entre 2 et 3 pixels
+        let dy = (Math.random()) + 1;
 
         // Définir une direction aléatoire (positive ou négative)
         dx *= Math.random() > 0.5 ? 1 : -1;
@@ -47,4 +47,19 @@ function moveZombies() {
     requestAnimationFrame(moveZombies); // Appeler en continu
 }
 
-export default { initZombies };
+function effectZombie (zombNumber) {   
+    zombNumber.classList.add("shoot-effect");
+    setTimeout(() => {
+        removeZombie(zombNumber);
+    } , 500);
+}
+
+function removeZombie (zombNumber) {
+    zombNumber.classList.add("hidden");
+}
+
+export default { 
+
+    initZombies,
+    effectZombie 
+};

@@ -10,20 +10,49 @@ body {
 
 html {
     overflow-x: hidden;
+}
 
+.mouv-zombie {
+    display: none;
 }
 
 @media screen and (min-width: 960px) {
 
     .mouv-zombie {
+        display: flex;
+        justify-content: center;
+        width: 5rem;
+        height: 5rem;
         z-index: 99999999;
         position: absolute;
-        object-fit: contain;
-        max-width: 3rem;
         top: 50%; /* Position initiale au centre */
         left: 50%;
-        // transform: translate(-50%, -50%); /* Centre l'image */
-        // transition: left 3s linear, top 3s linear; /* Déplacement fluide */
+        
+        &:hover {
+            cursor: url('../img/tronconneuse.png'), auto;
+        }
     }
+
+    .content-img-zombie {
+        object-fit: contain;
+        max-width: 3rem;
+    }
+
+    .shoot-effect{
+        animation: skew-x-shaking 1s infinite;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    @keyframes skew-x-shaking {
+        0% { transform: skewX(-50deg); }
+        5% { transform: skewX(50deg); }
+        10% { transform: skewX(-50deg); }
+        15% { transform: skewX(50deg); }
+        20% { transform: skewX(0deg); }
+        100% { transform: skewX(0deg); }
+       }
   
 }
