@@ -22,6 +22,14 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .realizations {
+        &__container {
+            align-items: center;
+        }
+    }
+}
+
 @media screen and (min-width: 960px) {
     .realizations {
         &__container {

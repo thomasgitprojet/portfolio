@@ -83,6 +83,43 @@
     list-style-type: circle;
 }
 
+@media screen and (min-width: 768px) {
+    .card {      
+        width: 50%;
+        height: fit-content;
+
+        &--realization {
+            width: 25%;
+        }
+
+        &__content-infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        }
+
+        &__content-img {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        &__img--b2b {
+            max-width: 50%;
+        }
+    }
+
+    .card--realization {
+        width: 100%;
+    }
+
+    .card__lnk--b2b {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
 @media screen and (min-width: 960px) {
     .card {      
         width: fit-content;

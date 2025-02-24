@@ -19,11 +19,17 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <img class="img-test" src="img/zombie.png" alt="">
+        <div class="header__container-img">
+            <img class="img-test" src="img/zombie.png" alt="">
+        </div>
         <div class="banner">
             <img class="img-hello" src="img/hello.png" alt="">
             <h2>hello</h2>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur massa in libero molestie pretium. Mauris viverra dictum ante, id suscipit ante fringilla vitae. Sed.</p>
+            <p class="description">Je m'appelle Thomas Desse, né en 1987 à Laon, dans l'Aisne. Après une dizaine d'années passées à Lille, où j'ai travaillé dans le secteur du bâtiment, j'ai découvert une nouvelle passion pour le développement web. Cette envie de changement m'a conduit à une reconversion professionnelle lorsque je suis arrivé en Normandie en 2020.<br>
+
+            Déterminé à faire de cette passion mon métier, j'ai suivi une formation et obtenu mon titre professionnel de Développeur Web et Web Mobile. Aujourd'hui, fort de mes compétences et de ma motivation, je suis disponible pour un emploi dans toute la France.<br>
+
+            N'hésitez pas à me contacter pour échanger sur d'éventuelles opportunités professionnelles !</p>
         </div>
     </header>
     
@@ -31,103 +37,103 @@
         <section id="apropos" class="about">
             <h2 class="about__title">À propos</h2>
             <div class="about__container">
-            <card class="card" data-aos="fade-right">
-                <div class="card__title">
-                    <div class="card__title-element"></div>
-                    <div class="card__title-element--2"></div>
-                    <div class="card__title-element--3"></div>
-                    <h3>Compétences</h3>
-                </div>
-                <ul class="card__list">
-                    <li class="card__list-itm"><img class="itm-img" src="img/html.png" alt="">HTML</li>
-                    <li class="card__list-itm"><img class="itm-img" src="img/css.png" alt="">CSS</li>
-                    <li class="card__list-itm"><img class="itm-img" src="img/js.png" alt="">JavaScript</li>
-                    <li class="card__list-itm"><img class="itm-img" src="img/php.png" alt="">PHP</li>
-                    <li class="card__list-itm"><img class="itm-img" src="img/mysql.png" alt="">MySQL</li>
-                    <li class="card__list-itm"><img class="itm-img" src="img/react.png" alt="">React</li>
-                    <li class="card__list-itm"><img class="itm-img" src="img/github.png" alt="">GitHub</li>
-                    <li class="card__list-itm"><img class="itm-img" src="img/docker.png" alt="">Docker</li>
-                </ul>
-            </card>
-            <card data-aos="fade-up" class="card card--min-width">
-                <div class="card__title">
-                    <div class="card__title-element"></div>
-                    <div class="card__title-element--2"></div>
-                    <div class="card__title-element--3"></div>
-                    <h3>Parcours</h3>
-                </div>
-                <ul class="card__list">
-                    <li>
-                        Stage Ketbi & Co / Août - Novembre 2024
-                        <ul class="card__list list-style">
-                            <li class="itm-secondary">Réalisation de site internet</li>
-                            <li class="itm-secondary">Boss2boss.club</li>
-                        </ul>
-                    </li>
-                    <li>
-                        MGM  Septembre 2019 - Mars 2021
-                        <ul class="card__list list-style">
-                            <li class="itm-secondary">Ouvrier qualifié</li>
-                            <li class="itm-secondary">Réalisation et entretien de réseaux gaz médicaux</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Leclerc et Chery / Janvier 2017 - Mai 2019
-                        <ul class="card__list list-style">
-                            <li class="itm-secondary">Ouvrier qualifié</li>
-                            <li class="itm-secondary"> Réalisation réseaux thermiques et sanitaires</li>
-                        </ul>
-                    </li>
-                </ul>
-            </card>
+                <card class="card" data-aos="fade-right">
+                    <div class="card__title">
+                        <div class="card__title-element"></div>
+                        <div class="card__title-element--2"></div>
+                        <div class="card__title-element--3"></div>
+                        <h3>Compétences</h3>
+                    </div>
+                    <ul class="card__list">
+                        <li class="card__list-itm"><img class="itm-img" src="img/html.png" alt="">HTML</li>
+                        <li class="card__list-itm"><img class="itm-img" src="img/css.png" alt="">CSS</li>
+                        <li class="card__list-itm"><img class="itm-img" src="img/js.png" alt="">JavaScript</li>
+                        <li class="card__list-itm"><img class="itm-img" src="img/php.png" alt="">PHP</li>
+                        <li class="card__list-itm"><img class="itm-img" src="img/mysql.png" alt="">MySQL</li>
+                        <li class="card__list-itm"><img class="itm-img" src="img/react.png" alt="">React</li>
+                        <li class="card__list-itm"><img class="itm-img" src="img/github.png" alt="">GitHub</li>
+                        <li class="card__list-itm"><img class="itm-img" src="img/docker.png" alt="">Docker</li>
+                    </ul>
+                </card>
+                <card data-aos="fade-up" class="card card--min-width">
+                    <div class="card__title">
+                        <div class="card__title-element"></div>
+                        <div class="card__title-element--2"></div>
+                        <div class="card__title-element--3"></div>
+                        <h3>Parcours</h3>
+                    </div>
+                    <ul class="card__list">
+                        <li>
+                            Stage Ketbi & Co / Août - Novembre 2024
+                            <ul class="card__list list-style">
+                                <li class="itm-secondary">Réalisation de site internet</li>
+                                <li class="itm-secondary">Boss2boss.club</li>
+                            </ul>
+                        </li>
+                        <li>
+                            MGM  Septembre 2019 - Mars 2021
+                            <ul class="card__list list-style">
+                                <li class="itm-secondary">Ouvrier qualifié</li>
+                                <li class="itm-secondary">Réalisation et entretien de réseaux gaz médicaux</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Leclerc et Chery / Janvier 2017 - Mai 2019
+                            <ul class="card__list list-style">
+                                <li class="itm-secondary">Ouvrier qualifié</li>
+                                <li class="itm-secondary"> Réalisation réseaux thermiques et sanitaires</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </card>
 
-            <card data-aos="fade-left" class="card card--max-width">
-                <div class="card__title">
-                    <div class="card__title-element"></div>
-                    <div class="card__title-element--2"></div>
-                    <div class="card__title-element--3"></div>
-                    <h3>Formations</h3>
-                </div>
-                <ul class="card__list">
-                    <li>
-                    Créative-Formation / Février 2024 - Novembre 2024
-                        <ul class="card__list list-style">
-                            <li class="itm-secondary">Développeur web et  Web mobil
-                                <ul class="card__list list-style">
-                                    <li class="itm-secondary">Figma (maquettage)</li>
+                <card data-aos="fade-left" class="card card--max-width">
+                    <div class="card__title">
+                        <div class="card__title-element"></div>
+                        <div class="card__title-element--2"></div>
+                        <div class="card__title-element--3"></div>
+                        <h3>Formations</h3>
+                    </div>
+                    <ul class="card__list">
+                        <li>
+                        Créative-Formation / Février 2024 - Novembre 2024
+                            <ul class="card__list list-style">
+                                <li class="itm-secondary">Développeur web et  Web mobil
+                                    <ul class="card__list list-style">
+                                        <li class="itm-secondary">Figma (maquettage)</li>
+                                        <li class="itm-secondary">Html / CSS </li>
+                                        <li class="itm-secondary">JavaScript</li>
+                                        <li class="itm-secondary">PHP</li>
+                                        <li class="itm-secondary">MySQL</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                        Formation école O'Clock / Juin 2021 - Novembre 2021
+                            <ul class="card__list list-style">
+                                <li class="itm-secondary">Développeur web et  Web mobil
+                                    <ul class="card__list list-style">
                                     <li class="itm-secondary">Html / CSS </li>
-                                    <li class="itm-secondary">JavaScript</li>
-                                    <li class="itm-secondary">PHP</li>
-                                    <li class="itm-secondary">MySQL</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                    Formation école O'Clock / Juin 2021 - Novembre 2021
-                        <ul class="card__list list-style">
-                            <li class="itm-secondary">Développeur web et  Web mobil
-                                <ul class="card__list list-style">
-                                <li class="itm-secondary">Html / CSS </li>
-                                    <li class="itm-secondary">JavaScript</li>
-                                    <li class="itm-secondary">PHP</li>
-                                    <li class="itm-secondary">MySQL</li>
-                                    <li class="itm-secondary">React</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                    Arep Fresc Roubaix    Septembre 2007 
-                    Février 2008
-                        <ul class="card__list list-style">
-                            <li class="itm-secondary">CAP installateur
-                            Thermique et Sanitaire
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </card>
+                                        <li class="itm-secondary">JavaScript</li>
+                                        <li class="itm-secondary">PHP</li>
+                                        <li class="itm-secondary">MySQL</li>
+                                        <li class="itm-secondary">React</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                        Arep Fresc Roubaix    Septembre 2007 
+                        Février 2008
+                            <ul class="card__list list-style">
+                                <li class="itm-secondary">CAP installateur
+                                Thermique et Sanitaire
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </card>
             </div>
         </section>
         <section id="realisation" class="realizations">
@@ -138,12 +144,14 @@
                         <div class="card__title-element"></div>
                         <div class="card__title-element--2"></div>
                         <div class="card__title-element--3"></div>
-                        <h3>Boss2boss</h3>
+                        <h3><a href="https://boss2boss.club">Boss2boss</a></h3>
                 </div>
                 <div class="card__content">
                     <p>Site réaliseé lors d'un stage effectué au sein de l'entreprise Ketbi & Co. </p>
                     <div class="card__content-img">
-                        <img class="card__img--b2b" src="img/b2bhome.png" alt="">
+                        <a class="card__lnk--b2b" href="https://boss2boss.club">
+                            <img class="card__img--b2b" src="img/b2bhome.png" alt="aperçu de boss2boss">
+                        </a>
                     </div>
                     <div class="card__content-infos">
                         <h3>Technologies utilisées :</h3>

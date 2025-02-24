@@ -31,7 +31,8 @@
 }
 
 .description {
-    color: white; 
+    color: white;
+    line-height: 2rem; 
 }
 
 .img-test {
@@ -49,12 +50,17 @@
         font-size: 3rem;   
     }
 
+    .header__container-img {
+        display: flex;
+        justify-content: center;
+    }
+
     .img-test {
         display: block;
         width: 26rem;
     }
 
     .banner {
-        align-content: flex-start;
+        align-content: center;
     }
 }
