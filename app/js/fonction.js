@@ -58,8 +58,113 @@ function removeZombie (zombNumber) {
     zombNumber.classList.add("hidden");
 }
 
+
+const b2bImages = [
+    'img/b2b/b2b-01.png',
+    'img/b2b/b2b-02.png',
+    'img/b2b/b2b-03.png',
+    'img/b2b/b2b-04.png',
+    'img/b2b/b2b-05.png',
+    'img/b2b/b2b-06.png',
+    'img/b2b/b2b-07.png',
+    'img/b2b/b2b-08.png',
+    'img/b2b/b2b-09.png'
+];
+
+let currentIndex = 0;
+let modal, carouselImage, currentCounter, totalCounter, thumbnailsContainer;
+
+function initCarousel() {
+    // Récupérer les éléments DOM
+    modal = document.getElementById('carousel-modal');
+    carouselImage = document.getElementById('carousel-image');
+    currentCounter = document.getElementById('carousel-current');
+    totalCounter = document.getElementById('carousel-total');
+    thumbnailsContainer = document.getElementById('carousel-thumbnails');
+    const closeBtn = document.querySelector('.carousel-modal__close');
+    const prevBtn = document.querySelector('.carousel__btn--prev');
+    const nextBtn = document.querySelector('.carousel__btn--next');
+    const overlay = document.querySelector('.carousel-modal__overlay');
+
+    // Vérifier que les éléments existent
+    if (!modal || !carouselImage) {
+        console.warn('Éléments du carrousel non trouvés');
+        return;
+    }
+
+    // Initialiser le compteur total
+    totalCounter.textContent = b2bImages.length;
+
+    // Créer les miniatures
+    b2bImages.forEach((img, index) => {
+        const thumb = document.createElement('div');
+        thumb.className = 'carousel__thumbnail';
+        thumb.innerHTML = `<img src="${img}" alt="Miniature ${index + 1}">`;
+        thumb.addEventListener('click', () => showImage(index));
+        thumbnailsContainer.appendChild(thumb);
+    });
+
+    // Ouvrir le carrousel au clic sur les miniatures de la grille
+    document.querySelectorAll('.gallery-grid__item').forEach(item => {
+        item.addEventListener('click', function() {
+            const index = parseInt(this.getAttribute('data-index'));
+            openCarousel(index);
+        });
+    });
+
+    // Event listeners
+    closeBtn.addEventListener('click', closeCarousel);
+    overlay.addEventListener('click', closeCarousel);
+    prevBtn.addEventListener('click', prevImage);
+    nextBtn.addEventListener('click', nextImage);
+
+    // Navigation clavier
+    document.addEventListener('keydown', (e) => {
+        if (modal.style.display === 'flex') {
+            if (e.key === 'Escape') closeCarousel();
+            if (e.key === 'ArrowLeft') prevImage();
+            if (e.key === 'ArrowRight') nextImage();
+        }
+    });
+}
+
+function openCarousel(index) {
+    currentIndex = index;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    showImage(currentIndex);
+}
+
+function closeCarousel() {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function showImage(index) {
+    currentIndex = index;
+    carouselImage.src = b2bImages[index];
+    currentCounter.textContent = index + 1;
+    
+    // Mise à jour des miniatures actives
+    document.querySelectorAll('.carousel__thumbnail').forEach((thumb, i) => {
+        thumb.classList.toggle('active', i === index);
+    });
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % b2bImages.length;
+    showImage(currentIndex);
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + b2bImages.length) % b2bImages.length;
+    showImage(currentIndex);
+}
+
+
 export default { 
 
     initZombies,
-    effectZombie 
+    effectZombie,
+    initCarousel,
 };

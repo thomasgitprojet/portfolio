@@ -9,7 +9,6 @@
     <title>Portfolio</title>
 </head>
 <body>
-    
     <header class="header">
         <h1 class="title"><a href="">Evil Dev</a></h1>
         <nav class="nav">
@@ -20,7 +19,7 @@
             </ul>
         </nav>
         <div class="header__container-img">
-            <img class="img-test" src="img/zombie.png" alt="">
+            <img class="img-test" src="img/dev&zombie.png" alt="">
         </div>
         <div class="banner">
             <img class="img-hello" src="img/hello.png" alt="">
@@ -51,6 +50,7 @@
                         <li class="card__list-itm"><img class="itm-img" src="img/php.png" alt="">PHP</li>
                         <li class="card__list-itm"><img class="itm-img" src="img/mysql.png" alt="">MySQL</li>
                         <li class="card__list-itm"><img class="itm-img" src="img/react.png" alt="">React</li>
+                        <li class="card__list-itm"><img class="itm-img" src="img/symfony.png" alt="">Symfony</li>
                         <li class="card__list-itm"><img class="itm-img" src="img/github.png" alt="">GitHub</li>
                         <li class="card__list-itm"><img class="itm-img" src="img/docker.png" alt="">Docker</li>
                     </ul>
@@ -141,28 +141,107 @@
             <div class="realizations__container">
             <card data-aos="fade-left" class="card card--realization">
                 <div class="card__title">
-                        <div class="card__title-element"></div>
-                        <div class="card__title-element--2"></div>
-                        <div class="card__title-element--3"></div>
-                        <h3><a href="https://boss2boss.club">Boss2boss</a></h3>
+                    <div class="card__title-element"></div>
+                    <div class="card__title-element--2"></div>
+                    <div class="card__title-element--3"></div>
+                    <h3>Boss2boss</h3>
                 </div>
                 <div class="card__content">
-                    <p>Site réaliseé lors d'un stage effectué au sein de l'entreprise Ketbi & Co. </p>
+                    <p>Projet réalisé dans le cadre d’un stage au sein de l’entreprise Ketbi & Co.
+                    Le site web a été conçu et mis en ligne durant mon stage. Depuis, le site a connu plusieurs modifications avant d’être définitivement supprimé suite à la fermeture de l’entreprise. Il ne subsiste aujourd’hui que quelques captures d’écran, présentées ici à titre d’illustration du travail réalisé.</p>
+
+                    <!-- Grille de 4 miniatures -->
                     <div class="card__content-img">
-                        <a class="card__lnk--b2b" href="https://boss2boss.club">
-                            <img class="card__img--b2b" src="img/b2bhome.png" alt="aperçu de boss2boss">
-                        </a>
+                        <div class="gallery-grid">
+                            <div class="gallery-grid__item" data-index="0">
+                                <img src="img/b2b/b2b-01.png" alt="Boss2boss screenshot 1">
+                                <div class="gallery-grid__overlay">
+                                    <span>Voir la galerie</span>
+                                </div>
+                            </div>
+                            <div class="gallery-grid__item" data-index="1">
+                                <img src="img/b2b/b2b-02.png" alt="Boss2boss screenshot 2">
+                            </div>
+                            <div class="gallery-grid__item" data-index="2">
+                                <img src="img/b2b/b2b-03.png" alt="Boss2boss screenshot 3">
+                            </div>
+                            <div class="gallery-grid__item" data-index="3">
+                                <img src="img/b2b/b2b-04.png" alt="Boss2boss screenshot 4">
+                                <div class="gallery-grid__more">+5</div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Modal Carrousel -->
+                    <div id="carousel-modal" class="carousel-modal">
+                        <div class="carousel-modal__overlay"></div>
+                        <div class="carousel-modal__content">
+                            <button class="carousel-modal__close">&times;</button>
+                            
+                            <div class="carousel">
+                                <button class="carousel__btn carousel__btn--prev">&#10094;</button>
+                                
+                                <div class="carousel__main">
+                                    <img id="carousel-image" src="" alt="Screenshot Boss2boss">
+                                    <div class="carousel__counter">
+                                        <span id="carousel-current">1</span> / <span id="carousel-total">9</span>
+                                    </div>
+                                </div>
+                                
+                                <button class="carousel__btn carousel__btn--next">&#10095;</button>
+                            </div>
+
+                            <!-- Miniatures de navigation -->
+                            <div class="carousel__thumbnails" id="carousel-thumbnails"></div>
+                        </div>
+                    </div>
+
                     <div class="card__content-infos">
                         <h3>Technologies utilisées :</h3>
                         <ul class="card__list list-style">
                             <li class="itm-secondary">Html</li>
                             <li class="itm-secondary">Css</li>
-                            <li class="itm-secondary">Php</li>
-                            <li class="itm-secondary">Js</li>
-                            <li class="itm-secondary">MySQL</li>
-                            <li class="itm-secondary">Docker</li>
-                            <li class="itm-secondary">GitHub</li>
+                            <li class="itm-secondary">JavaScript : scripts et fonctionnalités dynamiques côté client</li>
+                            <li class="itm-secondary">PHP 8.2 : développement backend</li>
+                            <li class="itm-secondary">MySQL 8 : base de données relationnelle</li>
+                            <li class="itm-secondary">PDO MySQL : accès sécurisé à la base de données</li>
+                            <li class="itm-secondary">Dotenv (vlucas/phpdotenv) : gestion des variables d'environnement</li>
+                            <li class="itm-secondary">Docker & Docker Compose : containerisation et orchestration des services</li>
+                            <li class="itm-secondary">Xdebug : débogage PHP</li>
+                            <li class="itm-secondary">MailDev : test et visualisation des e-mails en environnement local</li>
+                            <li class="itm-secondary">phpMyAdmin : administration de bases de données MySQL</li>
+                            <li class="itm-secondary">Composer : gestion des dépendances PHP</li>
+                            <li class="itm-secondary">Git / GitHub : gestion de versions</li>
+                        </ul>
+                    </div>
+                </div>
+            </card>
+
+            <card data-aos="fade-left" class="card card--realization">
+                <div class="card__title">
+                        <div class="card__title-element"></div>
+                        <div class="card__title-element--2"></div>
+                        <div class="card__title-element--3"></div>
+                        <h3><a href="https://backtothevhs.com">BackToTheVHS</a></h3>
+                </div>
+                <div class="card__content">
+                    <p>BackToTheVHS est une marketplace fictive dédiée aux passionnés de VHS, proposant un espace sécurisé pour acheter et vendre des cassettes entre collectionneurs inscrits.</p>
+                    <div class="card__content-img">
+                        <a class="card__lnk--b2b" href="https://backtothevhs.com">
+                            <img class="card__img--b2b" src="img/bttvhshome.png" alt="aperçu de boss2boss">
+                        </a>
+                    </div>
+                    <div class="card__content-infos">
+                        <h3>Technologies utilisées :</h3>
+                        <ul class="card__list list-style">
+                            <li class="itm-secondary">Symfony 7 / PHP 8.3 : développement backend MVC, sécurité applicative (authentification, protections CSRF), formulaires</li>
+                            <li class="itm-secondary">JavaScript : scripts et fonctionnalités dynamiques côté client</li>
+                            <li class="itm-secondary">MySQL / Doctrine ORM : modélisation, migrations, fixtures, requêtes préparées (protection contre l’injection SQL)</li>
+                            <li class="itm-secondary">Twig / TailwindCSS / Webpack Encore : intégration et gestion des assets</li>
+                            <li class="itm-secondary">Sécurité applicative : protections contre SQL Injection, XSS, CSRF, intégration reCAPTCHA v2</li>
+                            <li class="itm-secondary">Docker Compose : environnement de développement et production</li>
+                            <li class="itm-secondary">FrankenPHP / Caddy : déploiement et performance</li>
+                            <li class="itm-secondary">Outils : Xdebug, Mailpit, phpMyAdmin</li>
+                            <li class="itm-secondary">Git / GitHub : gestion de versions</li>
                         </ul>
                     </div>
                 </div>

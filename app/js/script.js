@@ -7,6 +7,7 @@ const zombie3Down = document.querySelector ('[data-zomb="zomb3"]');
 // Tools.initZombies();
 document.addEventListener("DOMContentLoaded", () => {
     Tools.initZombies(); // Démarrer le mouvement des 3 images
+    Tools.initCarousel();
 });
 
 zombie1Down.addEventListener("click", () => {Tools.effectZombie(zombie1Down)});
