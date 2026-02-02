@@ -1,0 +1,18 @@
+{
+  "font/IrishGrover-Regular.ttf": {
+    "file": "assets/IrishGrover-Regular-MESPPvHi.ttf",
+    "src": "font/IrishGrover-Regular.ttf"
+  },
+  "js/script.js": {
+    "file": "assets/script-BBDCQSAV.js",
+    "name": "script",
+    "src": "js/script.js",
+    "isEntry": true,
+    "css": [
+      "assets/script-fJgAbm7D.css"
+    ],
+    "assets": [
+      "assets/IrishGrover-Regular-MESPPvHi.ttf"
+    ]
+  }
+}

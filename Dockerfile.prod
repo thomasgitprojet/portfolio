@@ -1,0 +1,45 @@
+# Stage 1: Build assets avec Node.js
+FROM node:18-alpine AS builder
+
+WORKDIR /build
+
+# Copier les fichiers de dépendances
+COPY app/package*.json ./
+RUN npm ci --only=production
+
+# Copier le code source
+COPY app/ ./
+
+# Build Vite pour production (une seule fois)
+RUN npm run build
+
+# Stage 2: Production PHP/Apache
+FROM php:8.2-apache
+
+# Copier la configuration PHP de production
+COPY custom-php.ini /usr/local/etc/php/conf.d/custom-php.ini
+
+# Copier la configuration Apache
+COPY custom-apache.conf /etc/apache2/conf-available/custom-apache.conf
+RUN a2enconf custom-apache
+
+# Activer mod_rewrite
+RUN a2enmod rewrite
+
+# Copier tout le code
+COPY app/ /var/www/html/
+
+# Copier les assets buildés
+COPY --from=builder /build/build /var/www/html/build
+
+# Permissions appropriées
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 755 /var/www/html
+
+# Nettoyer les fichiers inutiles
+RUN rm -rf /var/www/html/node_modules \
+    /var/www/html/package*.json \
+    /var/www/html/package-lock.json \
+    /var/www/html/vite.config.js
+
+EXPOSE 80
