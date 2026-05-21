@@ -162,6 +162,8 @@ function prevImage() {
 }
 
 
+
+
 export default { 
 
     initZombies,

@@ -39,6 +39,165 @@
         <section id="apropos" class="about">
             <h2 class="about__title">À propos</h2>
             <div class="about__container">
+        
+                <!-- ── ONGLETS ────────────────────────────────────── -->
+                <div class="tabs" role="tablist" aria-label="À propos">
+                    <button
+                        class="tab active"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="panel-skills"
+                        id="tab-skills"
+                        onclick="switchTab('skills', this)"
+                    >Compétences</button>
+                    <button
+                        class="tab"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-parcours"
+                        id="tab-parcours"
+                        onclick="switchTab('parcours', this)"
+                    >Parcours</button>
+                    <button
+                        class="tab"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-formations"
+                        id="tab-formations"
+                        onclick="switchTab('formations', this)"
+                    >Formations</button>
+                </div>
+        
+                <!-- ── PANEL COMPÉTENCES ──────────────────────────── -->
+                <div
+                    class="tab-panel active"
+                    id="panel-skills"
+                    role="tabpanel"
+                    aria-labelledby="tab-skills"
+                >
+                    <ul class="skills-grid" aria-label="Liste des compétences">
+                        <li class="skill-badge"><img src="img/html.png" alt="">HTML</li>
+                        <li class="skill-badge"><img src="img/css.png" alt="">CSS</li>
+                        <li class="skill-badge"><img src="img/js.png" alt="">JavaScript</li>
+                        <li class="skill-badge"><img src="img/php.png" alt="">PHP</li>
+                        <li class="skill-badge"><img src="img/mysql.png" alt="">MySQL</li>
+                        <li class="skill-badge"><img src="img/react.png" alt="">React</li>
+                        <li class="skill-badge"><img src="img/symfony.png" alt="">Symfony</li>
+                        <li class="skill-badge"><img src="img/github.png" alt="">GitHub</li>
+                        <li class="skill-badge"><img src="img/docker.png" alt="">Docker</li>
+                    </ul>
+                </div>
+        
+                <!-- ── PANEL PARCOURS ─────────────────────────────── -->
+                <div
+                    class="tab-panel"
+                    id="panel-parcours"
+                    role="tabpanel"
+                    aria-labelledby="tab-parcours"
+                >
+                    <ol class="timeline" aria-label="Parcours professionnel">
+        
+                        <li class="timeline-item">
+                            <p class="timeline-date">Août 2024 — Novembre 2024</p>
+                            <p class="timeline-company">Ketbi &amp; Co — Stage</p>
+                            <ul class="timeline-tags">
+                                <li class="tag tag--highlight">Réalisation de site internet</li>
+                                <li class="tag">boss2boss.club</li>
+                            </ul>
+                        </li>
+        
+                        <li class="timeline-item">
+                            <p class="timeline-date">Septembre 2019 — Mars 2021</p>
+                            <p class="timeline-company">MGM — Ouvrier qualifié</p>
+                            <ul class="timeline-tags">
+                                <li class="tag">Réalisation et entretien de réseaux gaz médicaux</li>
+                            </ul>
+                        </li>
+        
+                        <li class="timeline-item">
+                            <p class="timeline-date">Janvier 2017 — Mai 2019</p>
+                            <p class="timeline-company">Leclerc et Chery — Ouvrier qualifié</p>
+                            <ul class="timeline-tags">
+                                <li class="tag">Réalisation réseaux thermiques et sanitaires</li>
+                            </ul>
+                        </li>
+        
+                    </ol>
+                </div>
+        
+                <!-- ── PANEL FORMATIONS ───────────────────────────── -->
+                <div
+                    class="tab-panel"
+                    id="panel-formations"
+                    role="tabpanel"
+                    aria-labelledby="tab-formations"
+                >
+                    <ol class="timeline" aria-label="Formations">
+        
+                        <li class="timeline-item">
+                            <p class="timeline-date">Février 2024 — Novembre 2024</p>
+                            <p class="timeline-company">Créative-Formation — Développeur Web &amp; Mobile</p>
+                            <ul class="timeline-tags">
+                                <li class="tag tag--highlight">Figma</li>
+                                <li class="tag tag--highlight">HTML / CSS</li>
+                                <li class="tag tag--highlight">JavaScript</li>
+                                <li class="tag tag--highlight">PHP</li>
+                                <li class="tag tag--highlight">MySQL</li>
+                            </ul>
+                        </li>
+        
+                        <li class="timeline-item">
+                            <p class="timeline-date">Juin 2021 — Novembre 2021</p>
+                            <p class="timeline-company">École O'Clock — Développeur Web &amp; Mobile</p>
+                            <ul class="timeline-tags">
+                                <li class="tag tag--highlight">HTML / CSS</li>
+                                <li class="tag tag--highlight">JavaScript</li>
+                                <li class="tag tag--highlight">PHP</li>
+                                <li class="tag tag--highlight">MySQL</li>
+                                <li class="tag tag--highlight">React</li>
+                            </ul>
+                        </li>
+        
+                        <li class="timeline-item">
+                            <p class="timeline-date">Septembre 2007 — Février 2008</p>
+                            <p class="timeline-company">Arep Fresc Roubaix</p>
+                            <ul class="timeline-tags">
+                                <li class="tag">CAP Installateur Thermique &amp; Sanitaire</li>
+                            </ul>
+                        </li>
+        
+                    </ol>
+                </div>
+        
+                <!-- ── STAND DE TIR ───────────────────────────────── -->
+                <div class="range">
+        
+                    <p class="range__label">// stand de tir — cliquez pour tirer</p>
+        
+                    <div class="range__hud">
+                        <span class="range__score">SCORE : <b id="range-score">0</b></span>
+                        <span class="range__msg" id="range-msg" aria-live="polite"></span>
+                        <span aria-hidden="true">🎯</span>
+                    </div>
+        
+                    <div class="range__stage" id="range-stage" aria-label="Stand de tir interactif">
+                        <!-- Lignes de perspective (injectées en JS) -->
+                        <!-- Entités mobiles (injectées en JS) -->
+                    </div>
+        
+                    <div class="range__reload-wrap" aria-hidden="true">
+                        <div class="range__reload-bar" id="range-reload"></div>
+                    </div>
+        
+                </div>
+                <!-- ── FIN STAND DE TIR ───────────────────────────── -->
+        
+            </div><!-- /.about__container -->
+        
+        </section>
+        <!-- <section id="apropos" class="about">
+            <h2 class="about__title">À propos</h2>
+            <div class="about__container">
                 <card class="card" data-aos="fade-right">
                     <div class="card__title">
                         <div class="card__title-element"></div>
@@ -138,7 +297,7 @@
                     </ul>
                 </card>
             </div>
-        </section>
+        </section> -->
         <section id="realisation" class="realizations">
             <h2 class="realizations__title">Realisations</h2>
             <div class="realizations__container">
@@ -230,7 +389,7 @@
                     <p>BackToTheVHS est une marketplace fictive dédiée aux passionnés de VHS, proposant un espace sécurisé pour acheter et vendre des cassettes entre collectionneurs inscrits.</p>
                     <div class="card__content-img">
                         <a class="card__lnk--b2b" href="https://backtothevhs.com">
-                            <img class="card__img--b2b" src="img/bttvhshome.png" alt="aperçu de boss2boss">
+                            <img class="card__img--b2b" src="img/bttvhshome.PNG" alt="aperçu de boss2boss">
                         </a>
                     </div>
                     <div class="card__content-infos">
