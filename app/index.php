@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- dev -->
-    <!-- <script type="module" src="http://localhost:5173/@vite/client"></script>
-    <script type="module" src="http://localhost:5173/js/script.js"></script> -->
+    <script type="module" src="http://localhost:5173/@vite/client"></script>
+    <script type="module" src="http://localhost:5173/js/script.js"></script>
     <!-- prod à modifier à chaque build-->
-    <link rel="stylesheet" href="/build/assets/script-fJgAbm7D.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/build/assets/script-fJgAbm7D.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <title>Portfolio</title>
 </head>
 <body>
@@ -47,16 +47,14 @@
                         role="tab"
                         aria-selected="true"
                         aria-controls="panel-skills"
-                        id="tab-skills"
-                        onclick="switchTab('skills', this)"
+                        id="tab-skills"                       
                     >Compétences</button>
                     <button
                         class="tab"
                         role="tab"
                         aria-selected="false"
                         aria-controls="panel-parcours"
-                        id="tab-parcours"
-                        onclick="switchTab('parcours', this)"
+                        id="tab-parcours"                       
                     >Parcours</button>
                     <button
                         class="tab"
@@ -64,7 +62,6 @@
                         aria-selected="false"
                         aria-controls="panel-formations"
                         id="tab-formations"
-                        onclick="switchTab('formations', this)"
                     >Formations</button>
                 </div>
         
@@ -299,7 +296,7 @@
             </div>
         </section> -->
         <section id="realisation" class="realizations">
-            <h2 class="realizations__title">Realisations</h2>
+            <h2 class="realizations__title">Réalisations</h2>
             <div class="realizations__container">
             <card data-aos="fade-left" class="card card--realization">
                 <div class="card__title">
@@ -436,7 +433,7 @@
     <!-- dev -->
     <!-- <script src="js/script.js"></script> -->
     <!-- prod à modifier à chaque build -->
-    <script type="module" src="/build/assets/script-BBDCQSAV.js"></script>
+    <!-- <script type="module" src="/build/assets/script-BBDCQSAV.js"></script>
 
         <div class="mouv-zombie" data-zomb="zomb1">
             <img class="content-img-zombie" src="img/zombie.png" alt="petit zombie">
@@ -446,7 +443,7 @@
         </div>
         <div class="mouv-zombie" data-zomb="zomb3">
             <img class="content-img-zombie" src="img/zombie.png" alt="petit zombie">
-        </div>
+        </div> -->
     
 </body>
 </html>

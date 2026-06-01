@@ -3,15 +3,60 @@
     "file": "assets/IrishGrover-Regular-MESPPvHi.ttf",
     "src": "font/IrishGrover-Regular.ttf"
   },
+  "img/css.png": {
+    "file": "assets/css-DVfPkTp0.png",
+    "src": "img/css.png"
+  },
+  "img/docker.png": {
+    "file": "assets/docker-CO_VWd_j.png",
+    "src": "img/docker.png"
+  },
+  "img/github.png": {
+    "file": "assets/github-CIKcfNXN.png",
+    "src": "img/github.png"
+  },
+  "img/html.png": {
+    "file": "assets/html-BMy2-XBC.png",
+    "src": "img/html.png"
+  },
+  "img/js.png": {
+    "file": "assets/js-BjiGfaT-.png",
+    "src": "img/js.png"
+  },
+  "img/mysql.png": {
+    "file": "assets/mysql-Czp3-ZJ0.png",
+    "src": "img/mysql.png"
+  },
+  "img/php.png": {
+    "file": "assets/php-IFx8RfEc.png",
+    "src": "img/php.png"
+  },
+  "img/react.png": {
+    "file": "assets/react-CBjhoM09.png",
+    "src": "img/react.png"
+  },
+  "img/zombie.png": {
+    "file": "assets/zombie-CsY-H2kA.png",
+    "src": "img/zombie.png"
+  },
   "js/script.js": {
-    "file": "assets/script-BBDCQSAV.js",
+    "file": "assets/script-B1rlYu5H.js",
     "name": "script",
     "src": "js/script.js",
     "isEntry": true,
     "css": [
-      "assets/script-fJgAbm7D.css"
+      "assets/script-Duz7U1Ez.css"
     ],
     "assets": [
+      "assets/zombie-CsY-H2kA.png",
+      "assets/html-BMy2-XBC.png",
+      "assets/css-DVfPkTp0.png",
+      "assets/js-BjiGfaT-.png",
+      "assets/php-IFx8RfEc.png",
+      "assets/mysql-Czp3-ZJ0.png",
+      "assets/react-CBjhoM09.png",
+      "assets/github-CIKcfNXN.png",
+      "assets/docker-CO_VWd_j.png",
       "assets/IrishGrover-Regular-MESPPvHi.ttf"
     ]
   }

@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 960px) {
     .header {
-        background: linear-gradient(to right, variables.$color2 35%, variables.$color4 35%);
+        background: linear-gradient(to right, variables.$color6 35%, variables.$color4 35%);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
