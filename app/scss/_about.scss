@@ -215,6 +215,7 @@
     margin-top: 1.5rem;
     border-top: 1px solid variables.$color3;
     padding-top: 1rem;
+    margin: 0 auto;
  
     &__label {
         font-family: 'Courier New', monospace;
@@ -226,8 +227,6 @@
     }
  
     &__hud {
-        display: flex;
-        justify-content: space-between;
         align-items: center;
         margin-bottom: 0.4rem;
         font-family: 'Courier New', monospace;
@@ -253,7 +252,7 @@
  
     &__stage {
         position: relative;
-        height: 220px;          // plus compact sur mobile
+        height: 60vh;          
         overflow: hidden;
         border: 1px solid variables.$primary-color;
         border-radius: 8px;
@@ -410,13 +409,15 @@
         }
  
         &__container {
-            align-items: stretch;
+            align-items: center;
         }
     }
  
     .range {
+        width: 60%;
+
         &__stage {
-            height: 300px;      // hauteur pleine à partir de tablette
+            height: 300px;  
         }
     }
 }
@@ -427,7 +428,7 @@
     }
  
     .tab {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
  
     .skill-badge {

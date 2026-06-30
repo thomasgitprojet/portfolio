@@ -40,7 +40,7 @@
             <h2 class="about__title">À propos</h2>
             <div class="about__container">
         
-                <!-- ── ONGLETS ────────────────────────────────────── -->
+                
                 <div class="tabs" role="tablist" aria-label="À propos">
                     <button
                         class="tab active"
@@ -65,7 +65,7 @@
                     >Formations</button>
                 </div>
         
-                <!-- ── PANEL COMPÉTENCES ──────────────────────────── -->
+                
                 <div
                     class="tab-panel active"
                     id="panel-skills"
@@ -85,7 +85,7 @@
                     </ul>
                 </div>
         
-                <!-- ── PANEL PARCOURS ─────────────────────────────── -->
+                
                 <div
                     class="tab-panel"
                     id="panel-parcours"
@@ -122,7 +122,7 @@
                     </ol>
                 </div>
         
-                <!-- ── PANEL FORMATIONS ───────────────────────────── -->
+                
                 <div
                     class="tab-panel"
                     id="panel-formations"
@@ -173,8 +173,8 @@
         
                     <div class="range__hud">
                         <span class="range__score">SCORE : <b id="range-score">0</b></span>
-                        <span class="range__msg" id="range-msg" aria-live="polite"></span>
                         <span aria-hidden="true">🎯</span>
+                        <span class="range__msg" id="range-msg" aria-live="polite"></span>
                     </div>
         
                     <div class="range__stage" id="range-stage" aria-label="Stand de tir interactif">
@@ -192,112 +192,41 @@
             </div><!-- /.about__container -->
         
         </section>
-        <!-- <section id="apropos" class="about">
-            <h2 class="about__title">À propos</h2>
-            <div class="about__container">
-                <card class="card" data-aos="fade-right">
-                    <div class="card__title">
-                        <div class="card__title-element"></div>
-                        <div class="card__title-element--2"></div>
-                        <div class="card__title-element--3"></div>
-                        <h3>Compétences</h3>
-                    </div>
-                    <ul class="card__list">
-                        <li class="card__list-itm"><img class="itm-img" src="img/html.png" alt="">HTML</li>
-                        <li class="card__list-itm"><img class="itm-img" src="img/css.png" alt="">CSS</li>
-                        <li class="card__list-itm"><img class="itm-img" src="img/js.png" alt="">JavaScript</li>
-                        <li class="card__list-itm"><img class="itm-img" src="img/php.png" alt="">PHP</li>
-                        <li class="card__list-itm"><img class="itm-img" src="img/mysql.png" alt="">MySQL</li>
-                        <li class="card__list-itm"><img class="itm-img" src="img/react.png" alt="">React</li>
-                        <li class="card__list-itm"><img class="itm-img" src="img/symfony.png" alt="">Symfony</li>
-                        <li class="card__list-itm"><img class="itm-img" src="img/github.png" alt="">GitHub</li>
-                        <li class="card__list-itm"><img class="itm-img" src="img/docker.png" alt="">Docker</li>
-                    </ul>
-                </card>
-                <card data-aos="fade-up" class="card card--min-width">
-                    <div class="card__title">
-                        <div class="card__title-element"></div>
-                        <div class="card__title-element--2"></div>
-                        <div class="card__title-element--3"></div>
-                        <h3>Parcours</h3>
-                    </div>
-                    <ul class="card__list">
-                        <li>
-                            Stage Ketbi & Co / Août - Novembre 2024
-                            <ul class="card__list list-style">
-                                <li class="itm-secondary">Réalisation de site internet</li>
-                                <li class="itm-secondary">Boss2boss.club</li>
-                            </ul>
-                        </li>
-                        <li>
-                            MGM  Septembre 2019 - Mars 2021
-                            <ul class="card__list list-style">
-                                <li class="itm-secondary">Ouvrier qualifié</li>
-                                <li class="itm-secondary">Réalisation et entretien de réseaux gaz médicaux</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Leclerc et Chery / Janvier 2017 - Mai 2019
-                            <ul class="card__list list-style">
-                                <li class="itm-secondary">Ouvrier qualifié</li>
-                                <li class="itm-secondary"> Réalisation réseaux thermiques et sanitaires</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </card>
 
-                <card data-aos="fade-left" class="card card--max-width">
-                    <div class="card__title">
-                        <div class="card__title-element"></div>
-                        <div class="card__title-element--2"></div>
-                        <div class="card__title-element--3"></div>
-                        <h3>Formations</h3>
-                    </div>
-                    <ul class="card__list">
-                        <li>
-                        Créative-Formation / Février 2024 - Novembre 2024
-                            <ul class="card__list list-style">
-                                <li class="itm-secondary">Développeur web et  Web mobil
-                                    <ul class="card__list list-style">
-                                        <li class="itm-secondary">Figma (maquettage)</li>
-                                        <li class="itm-secondary">Html / CSS </li>
-                                        <li class="itm-secondary">JavaScript</li>
-                                        <li class="itm-secondary">PHP</li>
-                                        <li class="itm-secondary">MySQL</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                        Formation école O'Clock / Juin 2021 - Novembre 2021
-                            <ul class="card__list list-style">
-                                <li class="itm-secondary">Développeur web et  Web mobil
-                                    <ul class="card__list list-style">
-                                    <li class="itm-secondary">Html / CSS </li>
-                                        <li class="itm-secondary">JavaScript</li>
-                                        <li class="itm-secondary">PHP</li>
-                                        <li class="itm-secondary">MySQL</li>
-                                        <li class="itm-secondary">React</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                        Arep Fresc Roubaix    Septembre 2007 
-                        Février 2008
-                            <ul class="card__list list-style">
-                                <li class="itm-secondary">CAP installateur
-                                Thermique et Sanitaire
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </card>
-            </div>
-        </section> -->
         <section id="realisation" class="realizations">
             <h2 class="realizations__title">Réalisations</h2>
             <div class="realizations__container">
+            <card data-aos="fade-left" class="card card--realization">
+                <div class="card__title">
+                        <div class="card__title-element"></div>
+                        <div class="card__title-element--2"></div>
+                        <div class="card__title-element--3"></div>
+                        <h3><a href="https://backtothevhs.com">BackToTheVHS</a></h3>
+                </div>
+                <div class="card__content">
+                    <p>BackToTheVHS est une marketplace fictive dédiée aux passionnés de VHS, proposant un espace sécurisé pour acheter et vendre des cassettes entre collectionneurs inscrits.</p>
+                    <div class="card__content-img">
+                        <a class="card__lnk--b2b" href="https://backtothevhs.com">
+                            <img class="card__img--b2b" src="img/bttvhshome.PNG" alt="aperçu de boss2boss">
+                        </a>
+                    </div>
+                    <div class="card__content-infos">
+                        <h3>Technologies utilisées :</h3>
+                        <ul class="card__list list-style">
+                            <li class="itm-secondary">Symfony 7 / PHP 8.3 : développement backend MVC, sécurité applicative (authentification, protections CSRF), formulaires</li>
+                            <li class="itm-secondary">JavaScript : scripts et fonctionnalités dynamiques côté client</li>
+                            <li class="itm-secondary">MySQL / Doctrine ORM : modélisation, migrations, fixtures, requêtes préparées (protection contre l’injection SQL)</li>
+                            <li class="itm-secondary">Twig / TailwindCSS / Webpack Encore : intégration et gestion des assets</li>
+                            <li class="itm-secondary">Sécurité applicative : protections contre SQL Injection, XSS, CSRF, intégration reCAPTCHA v2</li>
+                            <li class="itm-secondary">Docker Compose : environnement de développement et production</li>
+                            <li class="itm-secondary">FrankenPHP / Caddy : déploiement et performance</li>
+                            <li class="itm-secondary">Outils : Xdebug, Mailpit, phpMyAdmin</li>
+                            <li class="itm-secondary">Git / GitHub : gestion de versions</li>
+                        </ul>
+                    </div>
+                </div>
+            </card>
+
             <card data-aos="fade-left" class="card card--realization">
                 <div class="card__title">
                     <div class="card__title-element"></div>
@@ -374,58 +303,49 @@
                     </div>
                 </div>
             </card>
-
-            <card data-aos="fade-left" class="card card--realization">
-                <div class="card__title">
-                        <div class="card__title-element"></div>
-                        <div class="card__title-element--2"></div>
-                        <div class="card__title-element--3"></div>
-                        <h3><a href="https://backtothevhs.com">BackToTheVHS</a></h3>
-                </div>
-                <div class="card__content">
-                    <p>BackToTheVHS est une marketplace fictive dédiée aux passionnés de VHS, proposant un espace sécurisé pour acheter et vendre des cassettes entre collectionneurs inscrits.</p>
-                    <div class="card__content-img">
-                        <a class="card__lnk--b2b" href="https://backtothevhs.com">
-                            <img class="card__img--b2b" src="img/bttvhshome.PNG" alt="aperçu de boss2boss">
-                        </a>
-                    </div>
-                    <div class="card__content-infos">
-                        <h3>Technologies utilisées :</h3>
-                        <ul class="card__list list-style">
-                            <li class="itm-secondary">Symfony 7 / PHP 8.3 : développement backend MVC, sécurité applicative (authentification, protections CSRF), formulaires</li>
-                            <li class="itm-secondary">JavaScript : scripts et fonctionnalités dynamiques côté client</li>
-                            <li class="itm-secondary">MySQL / Doctrine ORM : modélisation, migrations, fixtures, requêtes préparées (protection contre l’injection SQL)</li>
-                            <li class="itm-secondary">Twig / TailwindCSS / Webpack Encore : intégration et gestion des assets</li>
-                            <li class="itm-secondary">Sécurité applicative : protections contre SQL Injection, XSS, CSRF, intégration reCAPTCHA v2</li>
-                            <li class="itm-secondary">Docker Compose : environnement de développement et production</li>
-                            <li class="itm-secondary">FrankenPHP / Caddy : déploiement et performance</li>
-                            <li class="itm-secondary">Outils : Xdebug, Mailpit, phpMyAdmin</li>
-                            <li class="itm-secondary">Git / GitHub : gestion de versions</li>
-                        </ul>
-                    </div>
-                </div>
-            </card>
             </div>
         </section>
     </main>
+
     <footer id="contact" class="footer">
-        <h2 class="footer__title">Contact</h2>
+ 
+        <div class="footer__top">
+            <h2 class="footer__title">Contact</h2>
+            <p class="footer__tagline">Disponible pour de nouvelles opportunités — parlons-en.</p>
+        </div>
+    
         <div class="footer__container">
             <a class="footer__link" href="https://github.com/thomasgitprojet">
-                <img class="footer__img img--github" src="img/github.png" alt="logo github">
+                <span class="footer__icon-wrap">
+                    <img class="footer__img img--github" src="img/github.png" alt="logo github">
+                </span>
+                <span class="footer__link-label">GitHub</span>
             </a>
     
             <a class="footer__link" href="https://www.linkedin.com/in/thomas-desse-dev/">
-                <img class="footer__img img--lk" src="img/lk.png" alt="logo linkedin">
+                <span class="footer__icon-wrap">
+                    <img class="footer__img img--lk" src="img/lk.png" alt="logo linkedin">
+                </span>
+                <span class="footer__link-label">LinkedIn</span>
             </a>
-    
-            <div class="contact__mail">
-                <img class="footer__img img--mail" src="img/mail.png" alt="logo-mail">
-                <p>thomasdesse.pro@gmail.com</p>
-            </div>
         </div>
-        
+    
+        <div class="contact__mail">
+            <img class="footer__img img--mail" src="img/mail.png" alt="logo-mail">
+            <a href="mailto:thomasdesse.pro@gmail.com">thomasdesse.pro@gmail.com</a>
+            <button
+                class="footer__copy-btn"
+                type="button"
+                id="copy-mail-btn"
+                data-mail="thomasdesse.pro@gmail.com"
+                aria-label="Copier l'adresse email"
+            >copier</button>
+        </div>
+    
+        <p class="footer__copyright">&copy; 2026 Thomas Desse — Tous droits réservés</p>
+    
     </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();

@@ -394,14 +394,33 @@ function prevImage() {
     showImage(currentIndex);
 }
 
-
+function initCopyMail() {
+    const btn = document.getElementById('copy-mail-btn');
+    if (!btn) return;
+ 
+    const originalText = btn.textContent;
+    const mail = btn.dataset.mail;
+ 
+    btn.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(mail);
+            btn.textContent = 'copié !';
+        } catch (err) {
+            btn.textContent = 'erreur';
+        }
+ 
+        clearTimeout(btn._resetTimer);
+        btn._resetTimer = setTimeout(() => {
+            btn.textContent = originalText;
+        }, 1500);
+    });
+}
 
 
 export default { 
 
-    // initZombies,
-    // effectZombie,
     initCarousel,
     initShootingRange,
-    initTabs
+    initTabs,
+    initCopyMail
 };

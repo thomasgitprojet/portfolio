@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     Tools.initCarousel();
     Tools.initShootingRange();
     Tools.initTabs();
+    Tools.initCopyMail();
 });
 
-// zombie1Down.addEventListener("click", () => {Tools.effectZombie(zombie1Down)});
-// zombie2Down.addEventListener("click", () => {Tools.effectZombie(zombie2Down)});
-// zombie3Down.addEventListener("click", () => {Tools.effectZombie(zombie3Down)});
