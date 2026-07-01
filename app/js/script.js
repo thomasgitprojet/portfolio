@@ -11,5 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     Tools.initShootingRange();
     Tools.initTabs();
     Tools.initCopyMail();
+    Tools.initRealizationCards();
 });
 

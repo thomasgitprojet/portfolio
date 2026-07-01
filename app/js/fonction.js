@@ -416,11 +416,25 @@ function initCopyMail() {
     });
 }
 
+function initRealizationCards() {
+    const btns = document.querySelectorAll('.card__toggle-btn');
+    if (!btns.length) return;
+
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const card = btn.closest('.card--realization');
+            const isOpen = card.classList.toggle('is-open');
+            btn.setAttribute('aria-expanded', isOpen);
+        });
+    });
+}
+
 
 export default { 
 
     initCarousel,
     initShootingRange,
     initTabs,
-    initCopyMail
+    initCopyMail,
+    initRealizationCards
 };

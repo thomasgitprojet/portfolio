@@ -34,13 +34,84 @@
     }
 }
 
+.card--realization {
+    width: 100%;
+    max-width: 600px;
+
+    .card__content {
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        transition: height 0.4s ease;
+
+        // Dégradé "trois points" en bas quand la card est fermée
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: linear-gradient(
+                to bottom,
+                transparent,
+                variables.$color2
+            );
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+    }
+
+    // Quand la card est ouverte
+    &.is-open {
+        .card__content {
+            height: auto;
+
+            &::after {
+                opacity: 0;
+            }
+        }
+
+        .card__toggle-btn::after {
+            content: '▲ Voir moins';
+        }
+    }
+
+    .card__toggle-btn {
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        background: none;
+        border: 1px solid variables.$primary-color;
+        border-radius: 6px;
+        color: variables.$color5;
+        font-family: 'Courier New', monospace;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        transition: border-color 0.2s, color 0.2s;
+
+        &::after {
+            content: '▼ Voir plus';
+        }
+
+        &:hover {
+            border-color: variables.$color5;
+            color: #d4e8e8;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .card--realization {
+        max-width: 45%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .realizations {
         padding: 3rem 3rem 6rem;
-
-        &__container {
-            align-items: center;
-        }
     }
 }
 

@@ -225,6 +225,7 @@
                         </ul>
                     </div>
                 </div>
+                <button class="card__toggle-btn" type="button" aria-expanded="false"></button>
             </card>
 
             <card data-aos="fade-left" class="card card--realization">
@@ -302,6 +303,7 @@
                         </ul>
                     </div>
                 </div>
+                <button class="card__toggle-btn" type="button" aria-expanded="false"></button>
             </card>
             </div>
         </section>
